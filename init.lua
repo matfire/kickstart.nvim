@@ -553,6 +553,7 @@ require('lazy').setup({
         tailwindcss = {},
         phpactor = {},
         tsserver = {},
+        svelte = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
