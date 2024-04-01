@@ -10,19 +10,27 @@ return {
   keys = function()
     local keys = {
       {
-        '<leader>H',
+        '<leader>ha',
         function()
           require('harpoon'):list():append()
         end,
-        desc = '[H]arpoon File',
+        desc = '[H]arpoon Add file',
       },
       {
-        '<leader>h',
+        '<leader>hx',
+        function()
+          local harpoon = require 'harpoon'
+          harpoon:list():remove()
+        end,
+        desc = '[H]arpoon Remove File',
+      },
+      {
+        '<leader>hd',
         function()
           local harpoon = require 'harpoon'
           harpoon.ui:toggle_quick_menu(harpoon:list())
         end,
-        desc = '[H]arpoon Quick Menu',
+        desc = '[H]arpoon Display Quick Menu',
       },
     }
     for i = 1, 5 do
