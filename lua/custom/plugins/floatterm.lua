@@ -6,9 +6,14 @@ return {
     -- vim.keymap.set('n', '<leader>t', '<cmd>FloatermNew lazydocker<CR>', { noremap = true, silent = true })
     local _keys = {
       {
-        '<leader>g',
+        '<leader>tg',
         ':FloatermNew lazygit<CR>',
-        desc = 'LazyGit',
+        desc = '[Terminal] LazyGit',
+      },
+      {
+        '<leader>ts',
+        ':FloatermNew spotify_player<CR>',
+        desc = '[Terminal] Spotify TUI',
       },
     }
     return _keys
